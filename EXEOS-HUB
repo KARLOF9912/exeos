@@ -27,9 +27,9 @@ end)
 
 local Tab = Window:NewTab("Credit")
 
-Section:NewLabel("Thank for use my hub made by S9Nx#9999")
+CreditSection:NewLabel("Thank for use my hub made by S9Nx#9999")
 
-Section:NewKeybind("Press L to toggle UI", "OPEN/CLOSE", Enum.KeyCode.L, function()
+CreditSection:NewKeybind("Press L to toggle UI", "OPEN/CLOSE", Enum.KeyCode.L, function()
 	Library:ToggleUI()
 
 end)
