@@ -1,0 +1,35 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("EXEOS HUB", "Sentinel")
+
+local Tab = Window:NewTab("MAIN")
+local Section = Tab:NewSection("ADMIN")
+
+
+Section:NewButton("IY ADMIN", "ButtonInfo", function()
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+
+end)
+
+local Section = Tab:NewSection("PLAYER")
+
+Section:NewButton("AIMBOT", "ButtonInfo", function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/G3q95XVz"))()
+
+end)
+
+Section:NewToggle("Fast Walk", "Make u speed 100", function(state)
+    if state then game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+    else game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    end
+end)
+
+local Tab = Window:NewTab("Credit")
+
+Section:NewLabel("Thank for use my hub made by S9Nx#9999")
+
+Section:NewKeybind("Press L to toggle UI", "OPEN/CLOSE", Enum.KeyCode.L, function()
+	Library:ToggleUI()
+
+end)
